@@ -57,10 +57,10 @@ export type CampaignView = {
   id: number;
   token: string;
   isNative: boolean;
-  merkleRoot: string;
+  merkle_root: string;
   deposited: string;
   claimed: string;
-  expiresAt: number;
+  expires_at: number;
   name: string;
   paused: boolean;
 };
