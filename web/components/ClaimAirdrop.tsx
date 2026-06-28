@@ -192,7 +192,7 @@ export function ClaimAirdrop() {
               <div>
                 <div className="text-[#64748B] text-xs">EXPIRES</div>
                 <div className="font-mono font-semibold mt-px text-xs">
-                  {new Date(campaign.expires_at * 1000).toLocaleDateString()}
+                  {new Date(campaign.expiresAt * 1000).toLocaleDateString()}
                 </div>
               </div>
             </div>
