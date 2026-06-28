@@ -1,0 +1,10 @@
+{
+  "chainId": "injective-888",
+  "network": "testnet",
+  "contract": "inj1tp592u65uma4hg5g7ykayt8n9l0zp3t6lla0uc",
+  "codeId": 39661,
+  "label": "inj-merkle-airdrop-v5",
+  "deployer": "inj12ms4zs769a6dynlhewfquesrzdnsmmjs6yuy2l",
+  "note": "Migrated with claim-path fixes. Campaign 0 funded with 0.004 INJ micro drop.",
+  "deployedAt": "2026-06-27"
+}

@@ -1,0 +1,23 @@
+{
+  "root": "0xfcbd6c6db32bb1d3de0e34fd69bce03309c3e7b873a688332d900c06af929d80",
+  "recipientCount": 1,
+  "totalAmount": "4000000000000000",
+  "totalAmountInj": "0.004",
+  "recipients": [
+    {
+      "address": "inj14rvcf3g0j8vfylws83wgnwzd2nnr4qd7nj04nt",
+      "injAddress": "inj14rvcf3g0j8vfylws83wgnwzd2nnr4qd7nj04nt",
+      "amount": "4000000000000000",
+      "amountInj": "0.004"
+    }
+  ],
+  "proofs": {
+    "inj14rvcf3g0j8vfylws83wgnwzd2nnr4qd7nj04nt": {
+      "address": "inj14rvcf3g0j8vfylws83wgnwzd2nnr4qd7nj04nt",
+      "injAddress": "inj14rvcf3g0j8vfylws83wgnwzd2nnr4qd7nj04nt",
+      "amount": "4000000000000000",
+      "amountInj": "0.004",
+      "proof": []
+    }
+  }
+}
