@@ -51,16 +51,17 @@ export function ClaimAirdrop() {
       .then((data) => {
         const response = data as any;
         setCampaign({
-          token: response.token || "",
-          is_native: response.is_native ?? true,
-          merkle_root: response.merkle_root,
-          deposited: response.deposited,
-          claimed: response.claimed,
-          expires_at: response.expires_at,
-          name: response.name || `Campaign #${campaignId}`,
-          paused: response.paused ?? false,
-        });
-      })
+         id: Number(campaignId),
+         token: response.token || "",
+         is_native: response.is_native ?? true,
+         merkleRoot: response.merkle_root,
+         deposited: response.deposited,
+         claimed: response.claimed,
+         expiresAt: response.expires_at,
+         name: response.name || `Campaign #${campaignId}`,
+         paused: response.paused ?? false,
+         });
+         })
       .catch(() => setCampaign(null));
   }, [contract, queryClient, campaignId]);
 
