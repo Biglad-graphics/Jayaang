@@ -55,6 +55,8 @@ export function getContractAddress(): string | undefined {
 
 export type CampaignView = {
   id: number;
+  token: string;
+  isNative: boolean;
   merkleRoot: string;
   deposited: string;
   claimed: string;
