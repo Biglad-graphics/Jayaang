@@ -42,9 +42,9 @@ export function ClaimAirdrop() {
     if (!contract || !queryClient) return;
     queryClient.queryContractSmart(contract, { get_campaign: { campaign_id: Number(campaignId || "0") } })
       .then((data) => {
-        const r = data as { merkle_root: string; deposited: string; claimed: string; expires_at: number; name: string; paused: boolean };
+        const r = data as { merkle_root: string; deposited: string; claimed: string; expires_at: number; name: string; paused: boolean; token?: string; is_native?: boolean };
         if (!r.deposited || r.deposited === "0") { setCampaign(null); return; }
-        setCampaign({ id: Number(campaignId), merkleRoot: r.merkle_root, deposited: r.deposited, claimed: r.claimed, expiresAt: r.expires_at, name: r.name, paused: r.paused });
+        setCampaign({ id: Number(campaignId), merkleRoot: r.merkle_root, deposited: r.deposited, claimed: r.claimed, expiresAt: r.expires_at, name: r.name, paused: r.paused, token: r.token ?? "inj", is_native: r.is_native ?? true });
       })
       .catch(() => setCampaign(null));
   }, [contract, campaignId, queryClient]);
