@@ -2,6 +2,7 @@
    JAYAANG — Premium Injective Design System
    Dark, minimal, elegant, production-grade
    ============================================ */
+@import "tailwindcss";
 
 :root {
   /* Core Palette - Injective inspired */
